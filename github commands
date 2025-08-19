@@ -1,0 +1,67 @@
+ git Basic Commands Cheat Sheet
+---------------------------------
+ --> git config --global user.name "YourName"
+ --> git config --global user.email "you@example.com"
+
+Starting a Repo
+---------------------------------------
+Create a new --> git repository in the current folder.
+-->--> git init
+Download (clone) an existing repo from --> gitHub.
+-->--> git clone <repo-url>
+
+Checking Status
+--------------------
+Shows which files are new, changed, or staged.
+--> --> git status
+Shows commit history.
+--> git log
+
+Adding & Committing
+-----------------------
+--> git add <file>
+Stage a single file.
+--> git add .
+Save changes locally with a message.
+--> git commit -m "your commit message"
+
+Branching
+------------------
+List all branches.
+--> git branch
+Create a new branch.
+--> git branch <branch-name>
+Switch to another branch.
+--> git checkout <branch-name>
+Create and switch to a new branch.
+--> --> git checkout -b <branch-name>
+
+
+Pushing & Pulling
+-------------------------
+Connect local repo to a gitHub repo.
+--> git remote add origin <repo-url>
+Push commits to --> gitHub (first time for main branch).
+--> git push -u origin main
+Push new commits after first time.
+--> git push
+Get latest changes from gitHub into your local repo.
+--> git pull
+
+
+Undo & Fix
+---------------
+Undo changes in a file (before commit).
+--> git restore <file>
+Unstage a file that was added.
+--> git reset HEAD <file>
+Edit the last commit message.
+--> git commit --amend -m "new message"
+
+
+Removing
+------------------------
+Remove a file from git tracking.
+--> git rm <file>
+Remove a folder.
+--> git rm -r <folder>
